@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>317ddf68-8943-4b63-8c90-8b1c4c477e7d</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>osu_bot</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="$(MSBuildThisFileDirectory)css\RangeContainer.css" />
+    <Content Include="$(MSBuildThisFileDirectory)ReplaySettings.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)js\dselect.js" />
+    <None Include="$(MSBuildThisFileDirectory)js\RangeContainer.js" />
+    <None Include="$(MSBuildThisFileDirectory)js\skinsLoad.js" />
+  </ItemGroup>
+</Project>
