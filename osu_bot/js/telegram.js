@@ -1,16 +1,6 @@
-﻿//var webApp = window.Telegram.WebApp;
-//var mainButton = webApp.MainButton;
-//var backButton = webApp.BackButton;
-
-//mainButton.setText("Сохранить");
-//backButton.setText("Отменить");
-
-//mainButton.show();
-//backButton.show();
-
-//mainButton.onClick(function () {
-
-//});
+﻿var webApp = window.Telegram.WebApp;
+var mainButton = webApp.MainButton;
+var backButton = webApp.BackButton;
 
 const urlParams = new URLSearchParams(window.location.search);
 const id = urlParams.get("id");
@@ -31,8 +21,7 @@ for (const [key, value] of urlParams.entries()) {
     }
 }
 
-var testButton = document.getElementById("testButton");
-testButton.onclick = function () {
+mainButton.onClick(function () {
     var elements = document.getElementsByTagName("*");
     var jsonData = {}
 
@@ -47,9 +36,22 @@ testButton.onclick = function () {
             }
         }
         else if (element.tagName == "SELECT") {
-            jsonData[element.id] = element.value;            
+            jsonData[element.id] = element.value;
         }
     }
     jsonData["id"] = id;
-    console.log(jsonData);
-}
+
+    webApp.sendData(jsonData);
+});
+
+backButton.onClick(function () {
+    webApp.sendData("Cancel id:" + id);
+});
+
+mainButton.setText("Сохранить");
+backButton.setText("Отменить");
+
+mainButton.show();
+backButton.show();
+
+webApp.ready();
