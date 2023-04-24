@@ -31,7 +31,7 @@ mainButton.onClick(function () {
             if (element.type == "checkbox" || element.type == "radio") {
                 jsonData[element.id] = element.checked;
             }
-            else if (element.type == "range") {
+            else {
                 jsonData[element.id] = element.value;
             }
         }
