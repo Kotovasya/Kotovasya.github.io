@@ -2,7 +2,7 @@ const stringData = `{"message":"Available skins:","skins":[{"skin":"-atmosphere-
 
 var jsonData = JSON.parse(stringData);
 
-var skinSelectBox = document.getElementById('skinSelectBox');
+var skinSelectBox = document.getElementById('skin');
 
 for (var i = 0; i < jsonData.skins.length; i++)
 {

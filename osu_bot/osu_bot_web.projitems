@@ -16,5 +16,6 @@
     <None Include="$(MSBuildThisFileDirectory)js\dselect.js" />
     <None Include="$(MSBuildThisFileDirectory)js\RangeContainer.js" />
     <None Include="$(MSBuildThisFileDirectory)js\skinsLoad.js" />
+    <None Include="$(MSBuildThisFileDirectory)js\telegram.js" />
   </ItemGroup>
 </Project>
