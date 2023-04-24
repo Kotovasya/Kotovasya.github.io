@@ -4,8 +4,9 @@
 
 <head>
     <meta charset="utf-8" />
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/RangeContainer.css">
     <title></title>
 </head>
@@ -16,7 +17,7 @@
             <div class="accordion-item">
                 <h1 class="accordion-header">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#soundSettingsPanel" aria-expanded="true" aria-controls="soundSettingsPanel">
+                        data-bs-target="#soundSettingsPanel" aria-expanded="true" aria-controls="soundSettingsPanel">
                         Sound settings
                     </button>
                 </h1>
@@ -47,8 +48,8 @@
             <div class="accordion-item">
                 <h1 class="accordion-header">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#gameplaySettingsPanel" aria-expanded="true"
-                            aria-controls="gameplaySettingsPanel">
+                        data-bs-target="#gameplaySettingsPanel" aria-expanded="true"
+                        aria-controls="gameplaySettingsPanel">
                         Gameplay settings
                     </button>
                 </h1>
@@ -150,7 +151,7 @@
                 <div class="accordion-item">
                     <h1 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#skinSettingsPanel" aria-expanded="true" aria-controls="skinSettingsPanel">
+                            data-bs-target="#skinSettingsPanel" aria-expanded="true" aria-controls="skinSettingsPanel">
                             Skin settings
                         </button>
                     </h1>
@@ -174,14 +175,14 @@
                             </div>
                             <div class="form-check-inline">
                                 <input class="form-check-input" type="radio" name="skinRadio" id="UseSkinColors"
-                                       value="option1">
+                                    value="option1">
                                 <label class="form-check-label" for="UseSkinColors">
                                     Use Skin Combo Colors
                                 </label>
                             </div>
                             <div class="form-check-inline">
-                                <input class="form-check-input form-check-inline" type="radio" name="skinRadio" id="UseBeatmapColors"
-                                       value="option2">
+                                <input class="form-check-input form-check-inline" type="radio" name="skinRadio"
+                                    id="UseBeatmapColors" value="option2">
                                 <label class="form-check-label" for="UseBeatmapColors">
                                     Use Beatmap Combo Colors
                                 </label>
@@ -193,7 +194,8 @@
                 <div class="accordion-item">
                     <h1 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#cursorSettingsPanel" aria-expanded="true" aria-controls="cursorSettingsPanel">
+                            data-bs-target="#cursorSettingsPanel" aria-expanded="true"
+                            aria-controls="cursorSettingsPanel">
                             Cursor settings
                         </button>
                     </h1>
@@ -220,14 +222,14 @@
                             </div>
                             <div class="form-check-inline">
                                 <input class="form-check-input" type="radio" name="cursorRadio" id="CursorRainbow"
-                                       value="option1">
+                                    value="option1">
                                 <label class="form-check-label" for="CursorRainbow">
                                     Rainbow
                                 </label>
                             </div>
                             <div class="form-check-inline">
                                 <input class="form-check-input" type="radio" name="cursorRadio" id="CursorTrailGlow"
-                                       value="option2">
+                                    value="option2">
                                 <label class="form-check-label" for="CursorTrailGlow">
                                     Trail glow
                                 </label>
@@ -239,7 +241,8 @@
                 <div class="accordion-item">
                     <h1 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#objectSettingsPanel" aria-expanded="true" aria-controls="objectSettingsPanel">
+                            data-bs-target="#objectSettingsPanel" aria-expanded="true"
+                            aria-controls="objectSettingsPanel">
                             Object settings
                         </button>
                     </h1>
@@ -306,7 +309,8 @@
                 <div class="accordion-item">
                     <h1 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#otherSettingsPanel" aria-expanded="true" aria-controls="otherSettingsPanel">
+                            data-bs-target="#otherSettingsPanel" aria-expanded="true"
+                            aria-controls="otherSettingsPanel">
                             Other settings
                         </button>
                     </h1>
@@ -377,20 +381,30 @@
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
-            integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
-            crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
-            integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
-            crossorigin="anonymous"></script>
+        integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
     <script src="js/skinsLoad.js"></script>
     <script src="js/dselect.js"></script>
     <script src="js/RangeContainer.js"></script>
     <script>
+        var webApp = window.Telegram.WebApp;
+        var mainButton = webApp.MainButton;
+        var backButton = webApp.BackButton;
+
+        mainButton.setText("Сохранить");
+        backButton.setText("Отменить");
+
         var select_box_element = document.querySelector('#skinSelectBox');
 
         dselect(select_box_element, {
             search: true
         });
+
+        mainButton.show();
+        backButton.show();
     </script>
 </body>
 
