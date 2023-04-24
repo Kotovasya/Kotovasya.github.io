@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+          integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/RangeContainer.css">
     <title></title>
 </head>
@@ -16,7 +16,7 @@
             <div class="accordion-item">
                 <h1 class="accordion-header">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#soundSettingsPanel" aria-expanded="true" aria-controls="soundSettingsPanel">
+                            data-bs-target="#soundSettingsPanel" aria-expanded="true" aria-controls="soundSettingsPanel">
                         Sound settings
                     </button>
                 </h1>
@@ -25,20 +25,20 @@
                         <label>Global Volume</label>
                         <br />
                         <div class="range-container">
-                            <input type="range" id="globalVolume" max="100" min="0">
+                            <input type="range" id="globalVolume" value="50" min="0" max="100">
                             <label for="range">50</label>
                         </div>
                         <br />
                         <label>Music Volume</label>
                         <br />
                         <div class="range-container">
-                            <input type="range" id="musicVolume" max="100" min="0">
+                            <input type="range" id="musicVolume" value="50" min="0" max="100">
                             <label for="range">50</label>
                         </div>
                         <br />
                         <label>Hitsound Volume</label>
                         <div class="range-container">
-                            <input type="range" id="hitsoundVolume" max="100" min="0">
+                            <input type="range" id="hitsoundVolume" value="50" min="0" max="100">
                             <label for="range">50</label>
                         </div>
                     </div>
@@ -47,8 +47,8 @@
             <div class="accordion-item">
                 <h1 class="accordion-header">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#gameplaySettingsPanel" aria-expanded="true"
-                        aria-controls="gameplaySettingsPanel">
+                            data-bs-target="#gameplaySettingsPanel" aria-expanded="true"
+                            aria-controls="gameplaySettingsPanel">
                         Gameplay settings
                     </button>
                 </h1>
@@ -102,236 +102,286 @@
                                 Show Borders
                             </label>
                         </div>
-                        <input class="form-check-input" type="checkbox" id="ShowMods" />
-                        <label class="form-check-label" for="ShowMods">
-                            Show Mods
-                        </label>
-                        <input class="form-check-input" type="checkbox" id="ShowResultScreen" />
-                        <label class="form-check-label" for="ShowResultScreen">
-                            Show Result Screen
-                        </label>
-                        <input class="form-check-input" type="checkbox" id="ShowBorders" />
-                        <label class="form-check-label" for="ShowBorders">
-                            Show Borders
-                        </label>
-                        <input class="form-check-input" type="checkbox" id="ShowBorders" />
-                        <label class="form-check-label" for="ShowBorders">
-                            Show Borders
-                        </label>
-                        <input class="form-check-input" type="checkbox" id="ShowBorders" />
-                        <label class="form-check-label" for="ShowBorders">
-                            Show Borders
-                        </label>
-                        <input class="form-check-input" type="checkbox" id="ShowHitCounter" />
-                        <label class="form-check-label" for="ShowHitCounter">
-                            Show Hit Counter (100, 50, misses)
-                        </label>
-                        <input class="form-check-input" type="checkbox" id="ShowAimErrorMeter" />
-                        <label class="form-check-label" for="ShowAimErrorMeter">
-                            Show Aim Error Meter
-                        </label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="ShowMods" />
+                            <label class="form-check-label" for="ShowMods">
+                                Show Mods
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="ShowResultScreen" />
+                            <label class="form-check-label" for="ShowResultScreen">
+                                Show Result Screen
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="ShowBorders" />
+                            <label class="form-check-label" for="ShowBorders">
+                                Show Borders
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="ShowBorders" />
+                            <label class="form-check-label" for="ShowBorders">
+                                Show Borders
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="ShowBorders" />
+                            <label class="form-check-label" for="ShowBorders">
+                                Show Borders
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="ShowHitCounter" />
+                            <label class="form-check-label" for="ShowHitCounter">
+                                Show Hit Counter (100, 50, misses)
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="ShowAimErrorMeter" />
+                            <label class="form-check-label" for="ShowAimErrorMeter">
+                                Show Aim Error Meter
+                            </label>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="accordion-item">
-                <h1 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#skinSettingsPanel" aria-expanded="true" aria-controls="skinSettingsPanel">
-                        Skin settings
-                    </button>
-                </h1>
-                <div id="skinSettingsPanel" class="accordion-collapse collapse">
-                    <div class="accordion-body">
-                        <div class="form-floating">
+                <div class="accordion-item">
+                    <h1 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#skinSettingsPanel" aria-expanded="true" aria-controls="skinSettingsPanel">
+                            Skin settings
+                        </button>
+                    </h1>
+                    <div id="skinSettingsPanel" class="accordion-collapse collapse">
+                        <div class="accordion-body">
                             <select class="form-select" name="select_box" id="skinSelectBox">
                                 <option selected>Skin</option>
                             </select>
                             <label for="skinSelectBox">Select skin</label>
-                        </div>
-                        <input class="form-check-input" type="checkbox" id="UseSkinCursor" />
-                        <label class="form-check-label" for="UseSkinCursor">
-                            Use Skin Cursor
-                        </label>
-                        <input class="form-check-input" type="checkbox" id="UseSkinHitsounds" />
-                        <label class="form-check-label" for="UseSkinHitsounds">
-                            Use Skin Hitsounds
-                        </label>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="skinRadio" id="UseSkinColors"
-                                value="option1">
-                            <label class="form-check-label" for="UseSkinColors">
-                                Use Skin Combo Colors
-                            </label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="skinRadio" id="UseBeatmapColors"
-                                value="option2">
-                            <label class="form-check-label" for="UseBeatmapColors">
-                                Use Beatmap Combo Colors
-                            </label>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="accordion-item">
-                <h1 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#cursorSettingsPanel" aria-expanded="true" aria-controls="cursorSettingsPanel">
-                        Cursor settings
-                    </button>
-                </h1>
-                <div id="cursorSettingsPanel" class="accordion-collapse collapse">
-                    <div class="accordion-body">
-                        <input class="form-check-input" type="checkbox" id="CursorRipples" />
-                        <label class="form-check-label" for="CursorRipples">
-                            Cursor Ripples
-                        </label>
-                        <input class="form-check-input" type="checkbox" id="CursorRipples" />
-                        <label class="form-check-label" for="CursorRipples">
-                            Cursor Trail
-                        </label>
-                        <label for="CursorSize">Cursor Size</label>
-                        <input type="range" class="form-range" min="0.5" max="2.0" step="0.01" id="CursorSize"
-                            value="1.0" />
-                        <label for="CursorSize">Those options only takes effect if "Use skin cursor" is not
-                            checked.</label>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="cursorRadio" id="CursorRainbow"
-                                value="option1">
-                            <label class="form-check-label" for="CursorRainbow">
-                                Rainbow
-                            </label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="cursorRadio" id="CursorTrailGlow"
-                                value="option2">
-                            <label class="form-check-label" for="CursorTrailGlow">
-                                Trail glow
-                            </label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="UseSkinCursor" />
+                                <label class="form-check-label" for="UseSkinCursor">
+                                    Use Skin Cursor
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="UseSkinHitsounds" />
+                                <label class="form-check-label" for="UseSkinHitsounds">
+                                    Use Skin Hitsounds
+                                </label>
+                            </div>
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" name="skinRadio" id="UseSkinColors"
+                                       value="option1">
+                                <label class="form-check-label" for="UseSkinColors">
+                                    Use Skin Combo Colors
+                                </label>
+                            </div>
+                            <div class="form-check-inline">
+                                <input class="form-check-input form-check-inline" type="radio" name="skinRadio" id="UseBeatmapColors"
+                                       value="option2">
+                                <label class="form-check-label" for="UseBeatmapColors">
+                                    Use Beatmap Combo Colors
+                                </label>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="accordion-item">
-                <h1 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#objectSettingsPanel" aria-expanded="true" aria-controls="objectSettingsPanel">
-                        Object settings
-                    </button>
-                </h1>
-                <div id="objectSettingsPanel" class="accordion-collapse collapse">
-                    <div class="accordion-body">
-                        <input class="form-check-input" type="checkbox" id="DrawFollowPoints" />
-                        <label class="form-check-label" for="DrawFollowPoints">
-                            Draw follow points
-                        </label>
-                        <input class="form-check-input" type="checkbox" id="DrawComboNumbers" />
-                        <label class="form-check-label" for="DrawComboNumbers">
-                            Show combo numbers
-                        </label>
-                        <input class="form-check-input" type="checkbox" id="ScaleToTheBeat" />
-                        <label class="form-check-label" for="ScaleToTheBeat">
-                            Scale to the beat
-                        </label>
-                        <input class="form-check-input" type="checkbox" id="ObjectsRainbow" />
-                        <label class="form-check-label" for="ObjectsRainbow">
-                            Rainbow
-                        </label>
-                        <input class="form-check-input" type="checkbox" id="ObjectsFlashToTheBeat" />
-                        <label class="form-check-label" for="ObjectsFlashToTheBeat">
-                            Flash to the beat
-                        </label>
-                        <input class="form-check-input" type="checkbox" id="UseHitCircleColor" />
-                        <label class="form-check-label" for="UseHitCircleColor">
-                            Use hit circle color
-                        </label>
-                        <input class="form-check-input" type="checkbox" id="SliderMerge" />
-                        <label class="form-check-label" for="SliderMerge">
-                            Merge sliders
-                        </label>
-                        <input class="form-check-input" type="checkbox" id="SliderShakingIn" />
-                        <label class="form-check-label" for="SliderShakingIn">
-                            Slider snaking in
-                        </label>
-                        <input class="form-check-input" type="checkbox" id="SliderShakingOut" />
-                        <label class="form-check-label" for="SliderShakingOut">
-                            Slider snaking out
-                        </label>
+                <div class="accordion-item">
+                    <h1 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#cursorSettingsPanel" aria-expanded="true" aria-controls="cursorSettingsPanel">
+                            Cursor settings
+                        </button>
+                    </h1>
+                    <div id="cursorSettingsPanel" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <label>Cursor size</label>
+                            <br />
+                            <div class="range-container">
+                                <input type="range" id="cursorSize" value="1.0" min="0.5" max="2.0" step="0.01">
+                                <label for="range">1.0</label>
+                            </div>
+                            <br />
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="CursorRipples" />
+                                <label class="form-check-label" for="CursorRipples">
+                                    Cursor Ripples
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="CursorRipples" />
+                                <label class="form-check-label" for="CursorRipples">
+                                    Cursor Trail
+                                </label>
+                            </div>
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" name="cursorRadio" id="CursorRainbow"
+                                       value="option1">
+                                <label class="form-check-label" for="CursorRainbow">
+                                    Rainbow
+                                </label>
+                            </div>
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" name="cursorRadio" id="CursorTrailGlow"
+                                       value="option2">
+                                <label class="form-check-label" for="CursorTrailGlow">
+                                    Trail glow
+                                </label>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="accordion-item">
-                <h1 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#otherSettingsPanel" aria-expanded="true" aria-controls="otherSettingsPanel">
-                        Other settings
-                    </button>
-                </h1>
-                <div id="otherSettingsPanel" class="accordion-collapse collapse">
-                    <div class="accordion-body">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="SeizureWarning" />
-                            <label class="form-check-label" for="SeizureWarning">
-                                Seizure warning before play
-                            </label>
-                            <input class="form-check-input" type="checkbox" id="LoadStoryBoard" />
-                            <label class="form-check-label" for="LoadStoryBoard">
-                                Load storyboard or video
-                            </label>
-                            <input class="form-check-input" type="checkbox" id="Skip" />
-                            <label class="form-check-label" for="Skip">
-                                Skip intro
-                            </label>
+                <div class="accordion-item">
+                    <h1 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#objectSettingsPanel" aria-expanded="true" aria-controls="objectSettingsPanel">
+                            Object settings
+                        </button>
+                    </h1>
+                    <div id="objectSettingsPanel" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="DrawFollowPoints" />
+                                <label class="form-check-label" for="DrawFollowPoints">
+                                    Draw follow points
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="DrawComboNumbers" />
+                                <label class="form-check-label" for="DrawComboNumbers">
+                                    Show combo numbers
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="ScaleToTheBeat" />
+                                <label class="form-check-label" for="ScaleToTheBeat">
+                                    Scale to the beat
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="ObjectsRainbow" />
+                                <label class="form-check-label" for="ObjectsRainbow">
+                                    Rainbow
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="ObjectsFlashToTheBeat" />
+                                <label class="form-check-label" for="ObjectsFlashToTheBeat">
+                                    Flash to the beat
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="UseHitCircleColor" />
+                                <label class="form-check-label" for="UseHitCircleColor">
+                                    Use hit circle color
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="SliderMerge" />
+                                <label class="form-check-label" for="SliderMerge">
+                                    Merge sliders
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="SliderShakingIn" />
+                                <label class="form-check-label" for="SliderShakingIn">
+                                    Slider snaking in
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="SliderShakingOut" />
+                                <label class="form-check-label" for="SliderShakingOut">
+                                    Slider snaking out
+                                </label>
+                            </div>
                         </div>
-                        <p class="fw-medium fs-5">Background dim</p>
-                        <br />
-                        <label>Intro</label>
-                        <br />
-                        <div class="range-container">
-                            <input type="range" id="introBGDim" max="100" min="0">
-                            <label for="range">50</label>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h1 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#otherSettingsPanel" aria-expanded="true" aria-controls="otherSettingsPanel">
+                            Other settings
+                        </button>
+                    </h1>
+                    <div id="otherSettingsPanel" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="SeizureWarning" />
+                                <label class="form-check-label" for="SeizureWarning">
+                                    Seizure warning before play
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="LoadStoryBoard" />
+                                <label class="form-check-label" for="LoadStoryBoard">
+                                    Load storyboard or video
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="Skip" />
+                                <label class="form-check-label" for="Skip">
+                                    Skip intro
+                                </label>
+                            </div>
+                            <p class="fw-medium fs-5">Background dim</p>
+                            <br />
+                            <label>Intro</label>
+                            <br />
+                            <div class="range-container">
+                                <input type="range" id="introBGDim" value="50" min="0" max="100">
+                                <label for="range">50</label>
+                            </div>
+                            <br />
+                            <label>In game</label>
+                            <br />
+                            <div class="range-container">
+                                <input type="range" id="inGameBGDim" value="50" min="0" max="100">
+                                <label for="range">50</label>
+                            </div>
+                            <br />
+                            <label>On breaks</label>
+                            <br />
+                            <div class="range-container">
+                                <input type="range" id="breakBGDim" value="50" min="0" max="100">
+                                <label for="range">50</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="bgParallax" />
+                                <label class="form-check-label" for="bgParallax">
+                                    Background parallax
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="showDancerLogo" />
+                                <label class="form-check-label" for="showDancerLogo">
+                                    Show danser's logo on the intro
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="playNightcoreSamples" />
+                                <label class="form-check-label" for="playNightcoreSamples">
+                                    Play nightcore hitsounds
+                                </label>
+                            </div>
                         </div>
-                        <br />
-                        <label>In game</label>
-                        <br />
-                        <div class="range-container">
-                            <input type="range" id="inGameBGDim" max="100" min="0">
-                            <label for="range">50</label>
-                        </div>
-                        <br />
-                        <label>On breaks</label>
-                        <br />
-                        <div class="range-container">
-                            <input type="range" id="breakBGDim" max="100" min="0">
-                            <label for="range">50</label>
-                        </div>
-                        <input class="form-check-input" type="checkbox" id="bgParallax" />
-                        <label class="form-check-label" for="bgParallax">
-                            Background parallax
-                        </label>
-                        <input class="form-check-input" type="checkbox" id="showDancerLogo" />
-                        <label class="form-check-label" for="showDancerLogo">
-                            Show danser's logo on the intro
-                        </label>
-                        <input class="form-check-input" type="checkbox" id="playNightcoreSamples" />
-                        <label class="form-check-label" for="playNightcoreSamples">
-                            Play nightcore hitsounds
-                        </label>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
-        integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
-        crossorigin="anonymous"></script>
+            integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+            crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
-        integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
-        crossorigin="anonymous"></script>
+            integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+            crossorigin="anonymous"></script>
     <script src="js/skinsLoad.js"></script>
     <script src="js/dselect.js"></script>
     <script src="js/RangeContainer.js"></script>
