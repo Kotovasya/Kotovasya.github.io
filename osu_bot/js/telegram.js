@@ -1,7 +1,7 @@
-﻿alert("test");
-var webApp = window.Telegram.WebApp;
+﻿var webApp = window.Telegram.WebApp;
 
-alert(webApp.initDataUnsafe.queryId);
+var testElement = document.getElementById("name");
+testElement.value = webApp.initDataUnsafe.queryId;
 
 const urlParams = new URLSearchParams(window.location.search);
 const id = urlParams.get("id");
