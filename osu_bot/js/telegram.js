@@ -1,7 +1,7 @@
 ﻿Telegram.WebApp.ready();
 
 var testElement = document.getElementById("name");
-testElement.value = webApp.initDataUnsafe.query_id;
+testElement.value = Telegram.WebApp.initDataUnsafe.query_id;
 
 const urlParams = new URLSearchParams(window.location.search);
 const id = urlParams.get("id");
