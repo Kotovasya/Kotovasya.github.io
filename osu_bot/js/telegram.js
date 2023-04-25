@@ -1,7 +1,4 @@
-﻿var testElement = document.getElementById("name");
-testElement.value = Telegram.WebApp.initDataUnsafe.query_id;
-
-const urlParams = new URLSearchParams(window.location.search);
+﻿const urlParams = new URLSearchParams(window.location.search);
 const id = urlParams.get("id");
 
 for (const [key, value] of urlParams.entries()) {
@@ -38,6 +35,7 @@ function save() {
             jsonData[element.id] = element.value;
         }
     }
+    jsonData["appName"] = "ReplaySettings";
     jsonData["id"] = id;
 
     var result = JSON.stringify(jsonData);
