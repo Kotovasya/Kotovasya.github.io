@@ -1,7 +1,7 @@
 ﻿var webApp = window.Telegram.WebApp;
 
 var testElement = document.getElementById("name");
-testElement.value = webApp.initDataUnsafe.queryId;
+testElement.value = webApp.initDataUnsafe.query_id;
 
 const urlParams = new URLSearchParams(window.location.search);
 const id = urlParams.get("id");
@@ -42,7 +42,8 @@ function save() {
     }
     jsonData["id"] = id;
 
-    webApp.sendData(jsonData);
+    var result = JSON.stringify(jsonData);
+    webApp.sendData(result);
 };
 
 function cancel() {
