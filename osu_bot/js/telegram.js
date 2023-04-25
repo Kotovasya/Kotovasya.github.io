@@ -1,4 +1,5 @@
-﻿var webApp = window.Telegram.WebApp;
+﻿alert("test");
+var webApp = window.Telegram.WebApp;
 
 alert(webApp.initDataUnsafe.queryId);
 
