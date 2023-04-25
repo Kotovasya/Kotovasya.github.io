@@ -1,4 +1,6 @@
-﻿var testElement = document.getElementById("name");
+﻿Telegram.WebApp.ready();
+
+var testElement = document.getElementById("name");
 testElement.value = webApp.initDataUnsafe.query_id;
 
 const urlParams = new URLSearchParams(window.location.search);
@@ -47,5 +49,3 @@ function save() {
 function cancel() {
     Telegram.WebApp.sendData("Cancel id:" + id);
 };
-
-Telegram.WebApp.ready();
