@@ -1,6 +1,5 @@
 ﻿var webApp = window.Telegram.WebApp;
-var mainButton = webApp.MainButton;
-var backButton = webApp.BackButton;
+
 
 const urlParams = new URLSearchParams(window.location.search);
 const id = urlParams.get("id");
