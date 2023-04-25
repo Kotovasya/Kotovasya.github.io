@@ -21,7 +21,7 @@ for (const [key, value] of urlParams.entries()) {
     }
 }
 
-mainButton.onClick(function () {
+function save() {
     var elements = document.getElementsByTagName("*");
     var jsonData = {}
 
@@ -42,16 +42,10 @@ mainButton.onClick(function () {
     jsonData["id"] = id;
 
     webApp.sendData(jsonData);
-});
+};
 
-backButton.onClick(function () {
+function cancel() {
     webApp.sendData("Cancel id:" + id);
-});
-
-mainButton.setText("Сохранить");
-backButton.setText("Отменить");
-
-mainButton.show();
-backButton.show();
+};
 
 webApp.ready();
