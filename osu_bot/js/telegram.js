@@ -1,5 +1,6 @@
 ﻿var webApp = window.Telegram.WebApp;
 
+alert(webApp.initDataUnsafe.queryId);
 
 const urlParams = new URLSearchParams(window.location.search);
 const id = urlParams.get("id");
