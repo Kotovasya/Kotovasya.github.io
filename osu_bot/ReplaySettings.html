@@ -12,6 +12,25 @@
 </head>
 
 <body>
+
+    <div class="modal" tabindex="-1" id="modalSkinPreview">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Skin preview</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img class="img-fluid" id="imageSkinPreview"/>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-body" >
+        <img class="img-fluid" id="imageSkinPeview"/>
+    </div>
+
     <div class="container-sm">
         <div class="col align-self-center">
             <label for="name" class="form-label">Preset Name</label>
@@ -85,6 +104,12 @@
                             </label>
                         </div>
                         <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="showKeyOverlay" />
+                            <label class="form-check-label" for="showKeyOverlay">
+                                Show Key Overlay
+                            </label>
+                        </div>
+                        <div class="form-check">
                             <input class="form-check-input" type="checkbox" id="showComboCounter" />
                             <label class="form-check-label" for="showComboCounter">
                                 Show Combo Counter
@@ -100,6 +125,12 @@
                             <input class="form-check-input" type="checkbox" id="showScoreboard" />
                             <label class="form-check-label" for="showScoreboard">
                                 Show Scoreboard
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="showAvatarOnScoreboard" />
+                            <label class="form-check-label" for="showAvatarOnScoreboard">
+                                Show Avatar On Scoreboard
                             </label>
                         </div>
                         <div class="form-check">
@@ -147,6 +178,9 @@
                             <select class="form-select" id="skin">
                             </select>
                             <br/>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalSkinPreview">Preview</button>
+                            <br/>
+                            <br/>
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" id="useSkinCursor" />
                                 <label class="form-check-label" for="useSkinCursor">
@@ -154,12 +188,11 @@
                                 </label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="useSkinHitsounds" />
-                                <label class="form-check-label" for="useSkinHitsounds">
+                                <input class="form-check-input" type="checkbox" id="useSkinHitSounds" />
+                                <label class="form-check-label" for="useSkinHitSounds">
                                     Use Skin Hitsounds
                                 </label>
                             </div>
-                            <br/>
                             <div class="form-check-inline">
                                 <input class="form-check-input" type="radio" name="skinRadio" id="useSkinColors">
                                 <label class="form-check-label" for="useSkinColors">
@@ -194,14 +227,20 @@
                             </div>
                             <br />
                             <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="cursorScaleToCS" />
+                                <label class="form-check-label" for="cursorScaleToCS">
+                                    Cursor Scale To CS
+                                </label>
+                            </div>
+                            <div class="form-check">
                                 <input class="form-check-input" type="checkbox" id="cursorRipples" />
                                 <label class="form-check-label" for="cursorRipples">
                                     Cursor Ripples
                                 </label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="cursorRipples" />
-                                <label class="form-check-label" for="cursorRipples">
+                                <input class="form-check-input" type="checkbox" id="cursorTrail" />
+                                <label class="form-check-label" for="cursorTrail">
                                     Cursor Trail
                                 </label>
                             </div>
