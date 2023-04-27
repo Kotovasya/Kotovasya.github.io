@@ -46,4 +46,12 @@ function cancel() {
     Telegram.WebApp.sendData("Cancel id:" + id);
 };
 
+var mainForm = document.getElementById("mainForm");
+
+mainForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+  
+    save();
+  });
+
 Telegram.WebApp.ready();
